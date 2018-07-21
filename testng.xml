@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MarkitWire" parallel="none" thread-count="2">
+<parameter name="browser" value="firefox"/>
+<parameter name="propertyFilePath" value="C:\Users\Aniket\Selenium Training\DataDrivenFramework2\Objects.properties"/>
+  <listeners>
+        <listener class-name="tests.RetryListenerClass"/>
+  </listeners>
+  <test name="LoginToMega">
+  
+    <classes>
+     <class name="tests.Setup"/> 
+      <class name="tests.LoginToMega"/>
+    </classes>
+  </test>
+  <test name="LoginToGieu">
+    <classes>
+   <class name="tests.Setup"/> 
+      <class name="tests.LoginToGieu"/>
+    </classes>
+  </test>
+  
+   <!-- LoginTest -->
+</suite> <!-- MarkitWire -->

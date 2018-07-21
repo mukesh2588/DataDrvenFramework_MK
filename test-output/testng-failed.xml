@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [MarkitWire]" parallel="none">
+  <parameter name="propertyFilePath" value="C:\Users\Aniket\Selenium Training\DataDrivenFramework2\Objects.properties"/>
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="tests.RetryListenerClass"/>
+  </listeners>
+  <test name="LoginToGieu(failed)" parallel="none">
+    <classes>
+      <class name="tests.LoginToGieu">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="loginToGieu"/>
+        </methods>
+      </class> <!-- tests.LoginToGieu -->
+      <class name="tests.LoginToMega">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginToMega -->
+      <class name="tests.Setup">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Setup -->
+    </classes>
+  </test> <!-- LoginToGieu(failed) -->
+</suite> <!-- Failed suite [MarkitWire] -->
