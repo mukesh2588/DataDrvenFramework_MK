@@ -18,6 +18,7 @@
    <class name="tests.Setup"/> 
       <class name="tests.LoginToGieu"/>
     </classes>
+    
   </test>
   
    <!-- LoginTest -->
